@@ -10,24 +10,21 @@ import BfterNav from "./BfterNav";
 import Footer from "./Footer";
 import CFterNavBar from "./CFterNavBar";
 import NIceRow from "./NIceRow";
+import Quotes from "./Quotes";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <>
     <App />
     <NavBar />
-
     <AfterNav />
     <NIceRow />
-
     <BfterNav />
     <NIceRow />
-
     <CFterNavBar />
     <NIceRow />
     <FillerOnly />
     <NIceRow />
-
     <Footer />
   </>
 );

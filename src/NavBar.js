@@ -1,40 +1,50 @@
+import { useRef } from "react";
+
 function NavBar() {
+  const theButton = useRef(null);
+
+  const clickHandler = () => {
+    theButton.current.focus();
+  };
+
   return (
     <div>
-      <nav id="navBar" class="navbar navbar-expand-lg fixed-top">
-        <a class="navbar-brand" href="#">
-          alexxygg
+      <nav id="navBar" className="navbar navbar-expand-lg fixed-top">
+        <a className="navbar-brand" href="#">
+          Xygg
         </a>
         <button
-          class="navbar-toggler"
+          className="navbar-toggler"
           type="button"
           data-toggle="collapse"
           data-target="#navbarText"
           aria-controls="navbarText"
           aria-expanded="false"
           aria-label="Toggle navigation"
+          ref={theButton}
+          onClick={clickHandler}
         >
           <div>☰</div>
         </button>
-        <div class="collapse navbar-collapse" id="navbarText">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">
-                Home <span class="sr-only">(current)</span>
+        <div className="collapse navbar-collapse" id="navbarText">
+          <ul className="navbar-nav mr-auto">
+            <li className="nav-item active">
+              <a className="nav-link" href="#">
+                Home <span className="sr-only">(current)</span>
               </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
+            <li className="nav-item">
+              <a className="nav-link" href="#odd">
                 About Me
               </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
+            <li className="nav-item">
+              <a className="nav-link" href="#fillerOnly">
                 Contact
               </a>
             </li>
           </ul>
-          <span class="navbar-text">alexxygg@gmail.com</span>
+          <span className="navbar-text">alexxygg@gmail.com</span>
         </div>
       </nav>
     </div>

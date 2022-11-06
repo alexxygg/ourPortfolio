@@ -12,7 +12,7 @@ function BfterNav() {
           </a>
         </h2>
       </div>
-      <h2 className="mb-5">Technologies I've worked with:</h2>
+      <h2 className="mb-5 techs">Technologies I've worked with:</h2>
       <div id="main1">
         <nav>
           <div class="div">

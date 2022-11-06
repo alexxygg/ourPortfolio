@@ -40,7 +40,7 @@ function NIceRow() {
         <div className="even"></div>
         <div className="odd"></div>
         <div className="even"></div>
-        <div className="odd"></div>
+        <div id="odd"></div>
       </div>
     </>
   );
