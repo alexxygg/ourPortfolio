@@ -10,19 +10,16 @@ function NavBar() {
   return (
     <div>
       <nav id="navBar" className="navbar navbar-expand-lg fixed-top">
-        <a className="navbar-brand" href="#">
-          Xygg
-        </a>
+        <a className="navbar-brand">alexxygg</a>
+
         <button
-          className="navbar-toggler"
+          className="navbar-toggler btn"
           type="button"
           data-toggle="collapse"
           data-target="#navbarText"
           aria-controls="navbarText"
           aria-expanded="false"
           aria-label="Toggle navigation"
-          ref={theButton}
-          onClick={clickHandler}
         >
           <div>☰</div>
         </button>
@@ -39,7 +36,7 @@ function NavBar() {
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#fillerOnly">
+              <a className="nav-link" href="#contact">
                 Contact
               </a>
             </li>

@@ -11,6 +11,7 @@ import Footer from "./Footer";
 import CFterNavBar from "./CFterNavBar";
 import NIceRow from "./NIceRow";
 import Quotes from "./Quotes";
+import Form from "./Form";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -25,6 +26,7 @@ root.render(
     <NIceRow />
     <FillerOnly />
     <NIceRow />
+    <Form /> <NIceRow />
     <Footer />
   </>
 );

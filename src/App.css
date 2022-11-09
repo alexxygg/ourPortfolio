@@ -42,7 +42,7 @@ nav {
   align-items: center;
   justify-content: center;
 }
-button,
+
 .btn {
   color: ghostwhite;
   transition: all 0.25s;
@@ -50,8 +50,9 @@ button,
   justify-content: center;
   align-items: center;
   background-color: #023047;
+  text-decoration: none;
 }
-button:hover,
+
 .btn:hover {
   cursor: cell;
   border-color: #04ee51;
@@ -63,9 +64,10 @@ button:hover,
 ::selection {
   color: #00d8ff;
 }
+
 a {
   text-decoration: none;
-  color: #04ee51;
+  color: rgb(2, 117, 216);
 }
 img {
   width: 8vw;
@@ -80,19 +82,15 @@ img {
   border-top: 1vh #151b29 solid;
   border-bottom: 1vh #151b29 solid;
   margin-bottom: 5vh;
+  background-color: rgb(230, 230, 230);
 }
 #textSide,
 #imageSide {
-  width: 50vw;
+  width: 50%;
   max-height: 80vh;
   background-size: cover;
-  color: #04ee51;
-}
-#textSide {
-}
-@font-face {
-  font-family: "Raleway", sans-serif;
-  src: url("../public/AbrilFatface-Regular.ttf");
+  color: rgb(2, 117, 216);
+  text-align: start;
 }
 
 span {
@@ -108,24 +106,22 @@ h2 {
   justify-content: center;
 }
 #main1 {
-  height: 40vh;
+  margin-bottom: 5vh;
 }
 #main2 {
-  height: 40vh;
   border-bottom: #151b29 solid 1vh;
+  padding-bottom: 5vh;
 }
 
 #navBar {
-  border-bottom: #151b29 solid 1vh;
+  border-bottom: solid #151b29 1vh;
   border-top: #151b29 solid 1vh;
   background-color: rgba(2, 48, 71, 0.9);
-
   color: #04ee51;
 }
 .carousel {
   max-height: 85vh;
   display: flex;
-  overflow: hidden;
 }
 #quote {
   /* background: url("../public/codePortfolio.jpg"); */
@@ -133,7 +129,7 @@ h2 {
   font-size: 2vh;
   display: flex;
   justify-content: center;
-  color: #04ee51;
+  color: ghostwhite;
   align-items: center;
   text-align: center;
 }
@@ -145,7 +141,7 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-bottom: #151b29 solid 1vw;
+  border-bottom: #151b29 solid 1vh;
 }
 .techs {
   font-size: 2rem;
@@ -153,8 +149,8 @@ h2 {
 }
 
 #footer {
-  border-top: #151b29 solid 1vw;
-  border-bottom: #151b29 solid 1vw;
+  border-top: #151b29 solid 1vh;
+  border-bottom: #151b29 solid 1vh;
 }
 ::-webkit-scrollbar {
   width: 2vh;
@@ -197,39 +193,156 @@ h2 {
   margin-bottom: 5vh;
 }
 .even {
-  height: 5vh;
-  width: 5vw;
+  height: 3vh;
+  width: 3vw;
   background-color: black;
 }
 .odd,
 #odd {
-  height: 5vh;
-  width: 5vw;
+  height: 3vh;
+  width: 3vw;
   background-color: #04ee51;
 }
 #fillerOnly {
   border-top: 1vh #151b29 solid;
-  border-bottom: #151b29 solid 1vh;
+
+  border-bottom: 1vh #04ee51 solid;
+
+  padding-top: 5vh;
 
   background-color: #404258;
   padding-top: 5vw;
   padding-bottom: 5vw;
 }
 
+#downloadCV {
+  width: 60vw;
+  height: 6vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(222, 32%, 12%);
+  color: ghostwhite;
+  margin: auto;
+  text-align: center;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  border: 1vh solid #04ee51;
+  font-size: 2vh;
+}
+.resumeLink {
+  color: #ffffff;
+  text-decoration: none;
+}
+.donwloadImages {
+  width: 2.5vh;
+  height: 2.5vh;
+}
 #topAfterQuote {
   border-top: 1vh #151b29 solid;
 }
-.mysteryh2 {
-  margin-top: 5vh;
-}
+
 .navbar-brand {
   padding-left: 2vh;
   padding-right: 2vh;
-  border-top-left-radius: 10%;
-  border-bottom-right-radius: 10%;
-  border-top-right-radius: 50%;
-  border-bottom-left-radius: 50%;
+  /* border-bottom: 0.4vh #04ee51 solid; */
+
   border-top: #04ee51 0.4vh solid;
-  border-bottom: #04ee51 0.4vh solid;
-  font-family: "Raleway", sans-serif;
+  border-right: 50% red;
+  /* border-bottom: #151b29 0.4vh solid; */
+}
+
+#contact {
+  border-top: #151b29 solid 1vh;
+  border-bottom: #151b29 solid 1vh;
+}
+
+#sideOfForm {
+  /* background-color: lightblue; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50vw;
+  padding: 4vh;
+  text-align: center;
+  font-size: x-large;
+  color: ghostwhite;
+  /* background: url("../public/whiteBackground.jpg"); */
+  /* background-size: cover; */
+  /* border-radius: 15% 0 0 15%; */
+  border-top: solid rgb(2, 117, 216);
+  /* border-left: solid rgb(2, 117, 216); */
+  border-bottom: solid rgb(2, 117, 216);
+  height: 50vh;
+}
+#formButton {
+  border: none;
+}
+#emailSpam {
+  color: #023047;
+}
+.aGreenOne {
+  color: #04ee51;
+}
+.aboutMePicture {
+  width: 20vh;
+  height: 20vh;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+}
+.niceEffect {
+  color: var(--purple-color);
+  text-shadow: 0 0 5px red, 0 0 2px red, 0 0 2px red, 0 0 8px red, 0 0 12px red,
+    0 0 15px red, 0 0 10px red, 0 0 15px red;
+}
+
+.neonText {
+  text-shadow: 0.03em 0 0 rgb(255 0 0 / 50%),
+    -0.023em -0.03em 0 rgb(0 128 0 / 50%), 0.023em 0.03em 0 rgb(0 0 255 / 50%);
+}
+
+.pattern {
+  background-color: #04ee51;
+  opacity: 0.6;
+  background-image: linear-gradient(135deg, #151b29 25%, transparent 25%),
+    linear-gradient(225deg, #151b29 25%, transparent 25%),
+    linear-gradient(45deg, #151b29 25%, transparent 25%),
+    linear-gradient(315deg, #151b29 25%, #04ee51 25%);
+  background-position: 10px 0, 10px 0, 0 0, 0 0;
+  background-size: 20px 20px;
+  background-repeat: repeat;
+}
+
+.gradientColor {
+  background: linear-gradient(180deg, #04ee51, #151b29);
+}
+#fillerOnly > h1 {
+  color: #151b29;
+}
+#projectsDiv {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 80%;
+}
+#projectsDiv > div {
+  width: 45%;
+  margin: auto;
+  margin-bottom: 1vh;
+}
+#projectsDiv > div > h2 {
+  font-size: 2rem;
+}
+#projectsDiv > div > a > img {
+  width: 100%;
+  margin: auto;
+  border-radius: 10%;
+  border: #151b29 solid 1vh;
+  height: 30vh;
+}
+#projectsDiv > div > a > img:hover {
+  border-radius: 30%;
+  opacity: 0.8;
+  border: #04ee51 solid 1.5vh;
 }

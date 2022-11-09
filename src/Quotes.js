@@ -1009,7 +1009,7 @@ function Quotes() {
   return (
     <>
       <BelowQuote />
-      <div id="quote" thevalue={theQuotes}>
+      <div id="quote" thevalue={theQuotes} className="niceEffect">
         {/* “Have no fear of perfection. You'll never reach it.” - Salvador Dali */}
         {quoteMaker()} <br />
       </div>

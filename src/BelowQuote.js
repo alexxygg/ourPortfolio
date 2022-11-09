@@ -2,7 +2,7 @@ function BelowQuote() {
   return (
     <div>
       {" "}
-      <p className="mt-3">Quote of the day / REFRESH PAGE</p>
+      <p className="mt-3 text-primary">QUOTE OF THE DAY / REFRESH PAGE</p>
     </div>
   );
 }

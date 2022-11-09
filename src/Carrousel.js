@@ -5,7 +5,9 @@ function Carrousel() {
       className="carousel slide"
       data-ride="carousel"
     >
+      {" "}
       <div className="carousel-inner">
+        {" "}
         <div className="carousel-item active">
           <img
             className="d-block w-100"
@@ -26,8 +28,8 @@ function Carrousel() {
             src="./thirdPicPortfolio.jpg"
             alt="Third slide"
           />
-        </div>{" "}
-      </div>{" "}
+        </div>
+      </div>
       <a
         className="carousel-control-prev "
         href="#carouselExampleIndicators"
@@ -48,7 +50,7 @@ function Carrousel() {
         <span className="carousel-control-next-icon" aria-hidden="true"></span>
         <span className="sr-only">Next</span>
       </a>{" "}
-      <ol className="carousel-indicators">
+      {/* <ol className="carousel-indicators">
         <li
           data-target="#carouselExampleIndicators"
           data-slide-to="0"
@@ -56,7 +58,7 @@ function Carrousel() {
         ></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-      </ol>
+      </ol> */}
     </div>
   );
 }
